@@ -1,10 +1,13 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./App.css";
-import TaInput from "./lib";
-import keyMap from "./lib/keyMap";
+import { TaInput } from "./lib/index";
 
 function App() {
   const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   return (
     <div>
@@ -16,9 +19,6 @@ function App() {
         >
           <textarea ref={inputRef} rows={5} cols={50}></textarea>
         </TaInput>
-      </div>
-      <div style={{ backgroundColor: "black", color: "white", padding: '15px' }}>
-        <pre>{JSON.stringify(keyMap, null, 2)}</pre>
       </div>
     </div>
   );
