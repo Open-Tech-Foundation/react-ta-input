@@ -13,11 +13,13 @@
     "react",
     "reactjs",
     "virtual",
+    "onscreen",
     "keyboard",
     "layout"
   ],
   "type": "module",
   "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
   "exports": {
     "import": "./dist/index.js"
   },
