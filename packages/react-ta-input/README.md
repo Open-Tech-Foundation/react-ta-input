@@ -14,11 +14,13 @@
 
 ## Features
 
+✅&nbsp; Simple API
+
 ✅&nbsp; It is based on the [ta-input-spec](https://github.com/Open-Tech-Foundation/ta-input-spec) specification
 
 ✅&nbsp; Virtual Keyboard
 
-✅&nbsp; Easy switch between `ta` & `System` inputs
+✅&nbsp; Easy switch between `ta` & `System` inputs methods
 
 ## Installation
 

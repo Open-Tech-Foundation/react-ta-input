@@ -55,11 +55,24 @@ export default function Home() {
         <div className={styles.features}>
           <ul>
             <li>
-              {" "}
-              <FcCheckmark
-                style={{ fontSize: "24px", marginRight: "8px" }}
-              />{" "}
+              <FcCheckmark style={{ fontSize: "24px", marginRight: "8px" }} />{" "}
               Simple API
+            </li>
+            <li>
+              <FcCheckmark style={{ fontSize: "24px", marginRight: "8px" }} />{" "}
+              It is based on the&nbsp;
+              <Link href="https://github.com/Open-Tech-Foundation/ta-input-spec">
+                ta-input-spec
+              </Link>
+              &nbsp;specification
+            </li>
+            <li>
+              <FcCheckmark style={{ fontSize: "24px", marginRight: "8px" }} />{" "}
+              Virtual Keyboard
+            </li>
+            <li>
+              <FcCheckmark style={{ fontSize: "24px", marginRight: "8px" }} />{" "}
+              Easy switch between &nbsp;<strong>ta</strong>&nbsp;&&nbsp;<strong>System</strong>&nbsp;input methods
             </li>
           </ul>
         </div>

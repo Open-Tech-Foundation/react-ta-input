@@ -4,7 +4,7 @@ import { themes } from "prism-react-renderer";
 
 const orgName = "open-tech-foundation";
 const repoName = "react-ta-input";
-const pkgVer = require(`../package.json`).version;
+const pkgVer = require(`../../packages/react-ta-input/package.json`).version;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {

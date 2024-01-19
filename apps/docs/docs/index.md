@@ -15,4 +15,4 @@ slug: /
 
 ✅ Virtual Keyboard
 
-✅ Easy switch between `ta` & `System` input
+✅ Easy switch between `ta` & `System` input methods
