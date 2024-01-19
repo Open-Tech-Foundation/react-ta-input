@@ -1,3 +1,7 @@
 {
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "pnpm run --filter react-ta-input build",
+    "build:docs": "pnpm run --filter react-ta-input build && pnpm run --filter docs build"
+  }
 }
