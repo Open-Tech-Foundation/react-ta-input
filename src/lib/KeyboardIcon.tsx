@@ -1,6 +1,5 @@
 const KeyboardIcon = () => (
   <svg
-    style={{ width: "24px", height: "24px" }}
     focusable="false"
     aria-hidden="true"
     viewBox="0 0 24 24"

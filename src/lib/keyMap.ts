@@ -1,4 +1,6 @@
-const keyMap = {
+import { KeyMap } from "./types";
+
+const keyMap: KeyMap = {
   q: "ு",
   w: "ய",
   e: "இ",
@@ -7,7 +9,7 @@ const keyMap = {
   y: "எ",
   u: "உ",
   i: "ி",
-  o: "ஓ",
+  o: "ஒ",
   p: "ப",
   a: "அ",
   s: "ச",
@@ -29,16 +31,16 @@ const keyMap = {
   W: "ஶ",
   E: "ஈ",
   R: "ற",
-  T: "",
+  T: null,
   Y: "ஏ",
   U: "ஊ",
   I: "ீ",
-  O: "ஒ",
-  P: "",
+  O: "ஓ",
+  P: null,
   A: "ஆ",
   S: "ஸ",
   D: "ஷ",
-  F: "",
+  F: null,
   G: "ே",
   H: "ஹ",
   J: "ஜ",
