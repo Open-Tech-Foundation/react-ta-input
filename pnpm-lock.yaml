@@ -6,7 +6,11 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    devDependencies:
+      '@changesets/cli':
+        specifier: ^2.27.1
+        version: 2.27.1
 
   apps/docs:
     dependencies:
@@ -40,9 +44,6 @@ importers:
 
   packages/react-ta-input:
     devDependencies:
-      '@changesets/cli':
-        specifier: ^2.27.1
-        version: 2.27.1
       '@types/node':
         specifier: ^20.11.5
         version: 20.11.5

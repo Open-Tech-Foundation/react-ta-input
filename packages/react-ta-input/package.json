@@ -43,7 +43,6 @@
     "publish-packages": "pnpm build && changeset version && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
     "@types/node": "^20.11.5",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",

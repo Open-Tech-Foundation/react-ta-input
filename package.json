@@ -3,5 +3,8 @@
   "scripts": {
     "build": "pnpm run --filter react-ta-input build",
     "build:docs": "pnpm run --filter react-ta-input build && pnpm run --filter docs build"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1"
   }
 }
