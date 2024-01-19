@@ -2,6 +2,7 @@
   "name": "@opentf/react-ta-input",
   "version": "0.2.0",
   "description": "The Thamizhl (தமிழ்) language scripts input for ReactJS.",
+  "homepage": "https://react-ta-input.pages.dev/",
   "keywords": [
     "thamizhl",
     "tamil",
@@ -18,7 +19,7 @@
     "layout"
   ],
   "type": "module",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "exports": {
     "import": "./dist/index.js"
@@ -36,6 +37,7 @@
   "scripts": {
     "dev": "vite --port=3000",
     "build": "tsc && vite build",
+    "test": "echo 'No tests found...'",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "publish-packages": "pnpm build && changeset version && changeset publish"

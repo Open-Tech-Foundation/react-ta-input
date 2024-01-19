@@ -6,13 +6,11 @@
 
 # React Ta Input
 
-![Virtual Keyboard](./assets/demo.gif)
+![Virtual Keyboard](./packages/react-ta-input/assets/demo.gif)
 
 </div>
 
 > The Thamizhl (தமிழ்) language scripts input for ReactJS.
-
-# [LIVE DEMO](https://react-ta-input.pages.dev/) | [DOCUMENTATION](https://react-ta-input.pages.dev/docs)
 
 ## Features
 
@@ -67,4 +65,4 @@ export default function App() {
 
 ## License
 
-Copyright (c) [Thanga Ganapathy](https://github.com/Thanga-Ganapathy) ([MIT License](../../LICENSE)).
+Copyright (c) [Thanga Ganapathy](https://github.com/Thanga-Ganapathy) ([MIT License](./LICENSE)).
