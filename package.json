@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "build": "pnpm run --filter react-ta-input build",
-    "build:docs": "pnpm run --filter react-ta-input build && pnpm run --filter docs build"
+    "build:docs": "pnpm run --filter react-ta-input build && pnpm run --filter docs build",
+    "publish-packages": "pnpm run --filter react-ta-input build && changeset version && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1"
