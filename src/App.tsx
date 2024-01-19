@@ -17,7 +17,7 @@ function App() {
           inputRef={inputRef}
           onChange={(newVal) => console.log("input changed", newVal)}
         >
-          <textarea ref={inputRef} rows={5} cols={50}></textarea>
+          <textarea ref={inputRef} rows={5} cols={50} />
         </TaInput>
       </div>
     </div>
