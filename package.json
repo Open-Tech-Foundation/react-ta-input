@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "dev": "pnpm run --filter react-ta-input dev",
     "build": "pnpm run --filter react-ta-input build",
     "build:docs": "pnpm run --filter react-ta-input build && pnpm run --filter docs build",
     "publish-packages": "pnpm run --filter react-ta-input build && changeset version && changeset publish"

@@ -84,7 +84,7 @@ export default function TaInput({ children, inputRef, onChange }: Props) {
         );
       }
     });
-    onChange(str);
+    onChange?.(str);
   };
 
   useEffect(() => {
@@ -108,12 +108,12 @@ export default function TaInput({ children, inputRef, onChange }: Props) {
           setTimeout(() => {
             node.setSelectionRange(selectionStart, selectionEnd);
           });
-          onChange(str);
+          onChange?.(str);
           break;
         }
         case "deleteContentBackward":
         case "deleteContentForward":
-          onChange(value);
+          onChange?.(value);
           break;
         default:
           break;
