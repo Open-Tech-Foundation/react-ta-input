@@ -1,4 +1,9 @@
-import { CSSProperties, ReactNode, RefObject } from "react";
+import {
+  CSSProperties,
+  HTMLAttributes,
+  ReactNode,
+  RefObject,
+} from "react";
 
 export type Lang = "ta" | "system";
 
@@ -8,6 +13,7 @@ export type Props = {
   onChange: (val: string) => void;
   kbd: boolean;
   lang: Lang;
+  otherProps: Partial<HTMLAttributes<HTMLDivElement>>;
 };
 
 export type VirtualKeyboardProps = {

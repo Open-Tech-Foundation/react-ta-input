@@ -10,6 +10,7 @@ export default function TaInput({
   onChange,
   kbd,
   lang,
+  ...otherProps
 }: Props) {
   const defaultOptions = {
     kbd: false,
@@ -178,7 +179,10 @@ export default function TaInput({
   }, [state.lang]);
 
   return (
-    <div style={{ position: "relative", display: "inline-block" }}>
+    <div
+      style={{ position: "relative", display: "inline-block" }}
+      {...otherProps}
+    >
       {children}
       <div style={{ position: "absolute", right: "0px", marginTop: "3px" }}>
         <div style={{ display: "flex", alignItems: "center" }}>

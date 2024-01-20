@@ -30,13 +30,17 @@ function App() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
+            console.log('form submt');
+            
           }}
         >
           <TaInput
             inputRef={inputRef2}
             onChange={(newVal) => console.log("input changed", newVal)}
-            kybd={false}
+            kbd={false}
             lang="system"
+            style={{ display: "inline-block", position: "relative" }}
+            data-g="test"
           >
             <input ref={inputRef2} rows={5} cols={50} />
           </TaInput>

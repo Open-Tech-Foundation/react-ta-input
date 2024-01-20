@@ -168,6 +168,7 @@ export default function VirtualKeyboard({
           {lang === "ta" ? "தமிழ்" : "System"}
         </span>
         <button
+          type="button"
           style={{
             color: "red",
             fontSize: "12px",
