@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.8.0
+
+### Minor Changes
+
+- 0ca31c0: Added zIndex in kbd & input bottom containers.
+
 ## 0.7.0
 
 ### Minor Changes
