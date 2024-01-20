@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.4.0
+
+### Minor Changes
+
+- 45b0c9b: Added kbd & lang props to API
+
 ## 0.3.2
 
 ### Patch Changes
