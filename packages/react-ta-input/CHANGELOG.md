@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.5.0
+
+### Minor Changes
+
+- e04ef79: Fix input focusing after virtual keyboard key press.
+
 ## 0.4.0
 
 ### Minor Changes
