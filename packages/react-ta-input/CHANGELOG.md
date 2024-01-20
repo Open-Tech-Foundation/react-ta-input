@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.3.0
+
+### Minor Changes
+
+- c55bc60: Fixed errors when no onChange prop is defined.
+
 ## 0.2.2
 
 ### Patch Changes
