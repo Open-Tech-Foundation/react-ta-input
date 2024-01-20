@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.3.1
+
+### Patch Changes
+
+- d217d36: Updated readme.
+
 ## 0.3.0
 
 ### Minor Changes
