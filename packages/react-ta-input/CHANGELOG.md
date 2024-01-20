@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.6.0
+
+### Minor Changes
+
+- 6b4d4e0: Fixed keyboard btn type.
+
 ## 0.5.0
 
 ### Minor Changes
