@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.7.0
+
+### Minor Changes
+
+- b06f3a4: Added otherProps prop to TaInput.
+
 ## 0.6.0
 
 ### Minor Changes
