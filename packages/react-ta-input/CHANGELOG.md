@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.3.2
+
+### Patch Changes
+
+- 3529ae4: Added github assets raw url in readme.
+
 ## 0.3.1
 
 ### Patch Changes
