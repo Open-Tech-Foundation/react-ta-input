@@ -6,7 +6,7 @@
 
 # React Ta Input
 
-![Virtual Keyboard](../../assets/demo.gif)
+![Virtual Keyboard](https://raw.githubusercontent.com/Open-Tech-Foundation/react-ta-input/main/assets/demo.gif)
 
 </div>
 
