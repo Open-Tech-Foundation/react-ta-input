@@ -6,7 +6,7 @@
 
 # React Ta Input
 
-![Virtual Keyboard](./packages/react-ta-input/assets/demo.gif)
+![Virtual Keyboard](./assets/demo.gif)
 
 </div>
 
