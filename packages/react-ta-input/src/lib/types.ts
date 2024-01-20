@@ -6,6 +6,8 @@ export type Props = {
   children: ReactNode;
   inputRef: RefObject<HTMLInputElement | HTMLTextAreaElement>;
   onChange: (val: string) => void;
+  kbd: boolean;
+  lang: Lang;
 };
 
 export type VirtualKeyboardProps = {
@@ -33,4 +35,9 @@ export type Btn = {
 
 export type KeyMap = {
   [key: string]: string | null;
+};
+
+export type Options = {
+  kbd: boolean;
+  lang: Lang;
 };

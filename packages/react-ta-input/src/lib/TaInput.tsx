@@ -2,11 +2,24 @@ import { useEffect, useState } from "react";
 import KeyboardIcon from "./KeyboardIcon";
 import transform from "./transform";
 import VirtualKeyboard from "./VirtualKeyboard";
-import { Lang, Props } from "./types";
+import { Lang, Options, Props } from "./types";
 
-export default function TaInput({ children, inputRef, onChange }: Props) {
-  const [show, setShow] = useState(true);
-  const [lang, setLang] = useState<Lang>("ta");
+export default function TaInput({
+  children,
+  inputRef,
+  onChange,
+  kbd,
+  lang,
+}: Props) {
+  const defaultOptions = {
+    kbd: false,
+    lang: 'ta',
+  };
+  const options: Options = {
+    kbd: typeof kbd === "boolean" ? kbd : defaultOptions.kbd,
+    lang: typeof lang === "string" ? lang : (defaultOptions.lang as Lang),
+  };
+  const [state, setState] = useState(options);
   const [shift, setShift] = useState(false);
 
   const handlePress = (char: string, ctrl?: boolean, code?: string) => {
@@ -32,7 +45,7 @@ export default function TaInput({ children, inputRef, onChange }: Props) {
           break;
         case "Enter":
           str = transform(
-            lang,
+            state.lang,
             value,
             "\n",
             selectionStart as number,
@@ -44,7 +57,7 @@ export default function TaInput({ children, inputRef, onChange }: Props) {
           break;
         case "Space":
           str = transform(
-            lang,
+            state.lang,
             value,
             " ",
             selectionStart as number,
@@ -63,7 +76,7 @@ export default function TaInput({ children, inputRef, onChange }: Props) {
       }
     } else {
       str = transform(
-        lang,
+        state.lang,
         value,
         char,
         selectionStart as number,
@@ -98,7 +111,7 @@ export default function TaInput({ children, inputRef, onChange }: Props) {
       switch (e.inputType) {
         case "insertText": {
           const str = transform(
-            lang,
+            state.lang,
             value,
             e.data as string,
             selectionStart as number,
@@ -161,25 +174,27 @@ export default function TaInput({ children, inputRef, onChange }: Props) {
         );
       }
     };
-  }, [lang]);
+  }, [state.lang]);
 
   return (
-    <div style={{ position: "relative", display: 'inline-block' }}>
+    <div style={{ position: "relative", display: "inline-block" }}>
       {children}
-      <div style={{ position: "absolute", right: "0px" }}>
+      <div style={{ position: "absolute", right: "0px", marginTop: '3px' }}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <button
             style={{ width: "24px", height: "24px", padding: 0, margin: 0 }}
             title="Toggle Virtual Keyboard"
-            onClick={() => setShow(!show)}
+            onClick={() => setState({ ...state, kbd: !state.kbd })}
           >
             <KeyboardIcon />
           </button>{" "}
           <select
             style={{ marginLeft: "5px" }}
             title="Change Input"
-            value={lang}
-            onChange={(e) => setLang(e.target.value as Lang)}
+            value={state.lang}
+            onChange={(e) =>
+              setState({ ...state, lang: e.target.value as Lang })
+            }
           >
             <option value="ta">தமிழ்</option>
             <option value="system">System</option>
@@ -187,9 +202,9 @@ export default function TaInput({ children, inputRef, onChange }: Props) {
         </div>
       </div>
       <VirtualKeyboard
-        show={show}
-        lang={lang}
-        onClose={() => setShow(false)}
+        show={state.kbd}
+        lang={state.lang}
+        onClose={() => setState({ ...state, kbd: false })}
         onPress={handlePress}
         shift={shift}
       />

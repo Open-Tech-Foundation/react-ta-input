@@ -136,6 +136,7 @@ export default function VirtualKeyboard({
         {arr.map((btn, i) => (
           <button
             key={i}
+            type="button"
             style={{ ...btn.styles, margin: "5px", fontSize: "16px" }}
             disabled={btn.disabled}
             onClick={() => handlePress(btn)}
