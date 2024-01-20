@@ -156,7 +156,7 @@ export default function VirtualKeyboard({
         position: "fixed",
         bottom: "10px",
         padding: "8px",
-        // border: "1px solid darkgray",
+        zIndex: 1,
         left: "50%",
         transform: "translateX(-50%)",
         boxShadow:

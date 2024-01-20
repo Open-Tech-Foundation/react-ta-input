@@ -184,7 +184,14 @@ export default function TaInput({
       {...otherProps}
     >
       {children}
-      <div style={{ position: "absolute", right: "0px", marginTop: "3px" }}>
+      <div
+        style={{
+          position: "absolute",
+          right: "0px",
+          marginTop: "3px",
+          zIndex: 1,
+        }}
+      >
         <div style={{ display: "flex", alignItems: "center" }}>
           <button
             type="button"
