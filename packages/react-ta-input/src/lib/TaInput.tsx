@@ -183,6 +183,7 @@ export default function TaInput({
       <div style={{ position: "absolute", right: "0px", marginTop: "3px" }}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <button
+            type="button"
             style={{ width: "24px", height: "24px", padding: 0, margin: 0 }}
             title="Toggle Virtual Keyboard"
             onClick={() => setState({ ...state, kbd: !state.kbd })}

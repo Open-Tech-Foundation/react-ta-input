@@ -17,7 +17,7 @@ function App() {
         <TaInput
           inputRef={inputRef1}
           onChange={(newVal) => console.log("input changed", newVal)}
-          kbd={true}
+          kbd={false}
           lang="ta"
         >
           <textarea ref={inputRef1} rows={5} cols={50} />
@@ -27,14 +27,20 @@ function App() {
       <div
         style={{ display: "flex", justifyContent: "center", marginTop: "25px" }}
       >
-        <TaInput
-          inputRef={inputRef2}
-          onChange={(newVal) => console.log("input changed", newVal)}
-          kybd={false}
-          lang="system"
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
         >
-          <input ref={inputRef2} rows={5} cols={50} />
-        </TaInput>
+          <TaInput
+            inputRef={inputRef2}
+            onChange={(newVal) => console.log("input changed", newVal)}
+            kybd={false}
+            lang="system"
+          >
+            <input ref={inputRef2} rows={5} cols={50} />
+          </TaInput>
+        </form>
       </div>
     </div>
   );
