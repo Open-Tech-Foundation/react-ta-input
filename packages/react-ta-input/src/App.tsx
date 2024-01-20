@@ -17,7 +17,7 @@ function App() {
         <TaInput
           inputRef={inputRef1}
           onChange={(newVal) => console.log("input changed", newVal)}
-          kybd={true}
+          kbd={true}
           lang="ta"
         >
           <textarea ref={inputRef1} rows={5} cols={50} />

@@ -13,7 +13,7 @@ export default function TaInput({
 }: Props) {
   const defaultOptions = {
     kbd: false,
-    lang: 'ta',
+    lang: "ta",
   };
   const options: Options = {
     kbd: typeof kbd === "boolean" ? kbd : defaultOptions.kbd,
@@ -90,11 +90,11 @@ export default function TaInput({
     inputRef.current.value = str;
     setTimeout(() => {
       if (inputRef.current) {
-        inputRef.current.focus();
         inputRef.current.setSelectionRange(
           newSelStart < 0 ? 0 : newSelStart,
           newSelEnd < 0 ? 0 : newSelEnd
         );
+        inputRef.current.focus();
       }
     });
     onChange?.(str);
@@ -120,6 +120,7 @@ export default function TaInput({
           node.value = str;
           setTimeout(() => {
             node.setSelectionRange(selectionStart, selectionEnd);
+            node.focus();
           });
           onChange?.(str);
           break;
@@ -179,7 +180,7 @@ export default function TaInput({
   return (
     <div style={{ position: "relative", display: "inline-block" }}>
       {children}
-      <div style={{ position: "absolute", right: "0px", marginTop: '3px' }}>
+      <div style={{ position: "absolute", right: "0px", marginTop: "3px" }}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <button
             style={{ width: "24px", height: "24px", padding: 0, margin: 0 }}
