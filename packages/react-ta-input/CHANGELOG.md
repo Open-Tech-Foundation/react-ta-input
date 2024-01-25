@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.9.0
+
+### Minor Changes
+
+- 01d78b2: Fixed multiple input event types.
+
 ## 0.8.0
 
 ### Minor Changes
