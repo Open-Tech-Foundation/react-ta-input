@@ -169,6 +169,7 @@ export default function VirtualKeyboard({
         </span>
         <button
           type="button"
+          title="Close"
           style={{
             color: "red",
             fontSize: "12px",

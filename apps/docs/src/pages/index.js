@@ -72,10 +72,18 @@ export default function Home() {
             </li>
             <li>
               <FcCheckmark style={{ fontSize: "24px", marginRight: "8px" }} />{" "}
-              Easy switch between &nbsp;<strong>ta</strong>&nbsp;&&nbsp;<strong>System</strong>&nbsp;input methods
+              Easy switch between &nbsp;<strong>ta</strong>&nbsp;&&nbsp;
+              <strong>System</strong>&nbsp;input methods
             </li>
           </ul>
         </div>
+        <HeadingWithDivider title="Upcoming" />
+        <ul>
+          <li>Drag virtual keyboard</li>
+          <li>Virtual Keyboard size variants</li>
+          <li>Option to pick various signs</li>
+          <li>Keyboard shortcut to change input language</li>
+        </ul>
       </main>
     </Layout>
   );

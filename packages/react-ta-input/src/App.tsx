@@ -17,7 +17,7 @@ function App() {
         <TaInput
           inputRef={inputRef1}
           onChange={(newVal) => console.log("input changed", newVal)}
-          kbd={false}
+          kbd
           lang="ta"
         >
           <textarea ref={inputRef1} rows={5} cols={50} />
@@ -30,8 +30,7 @@ function App() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            console.log('form submt');
-            
+            console.log("form submt");
           }}
         >
           <TaInput

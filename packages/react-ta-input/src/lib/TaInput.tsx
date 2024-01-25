@@ -109,6 +109,7 @@ export default function TaInput({
     function handleInput(e: InputEvent) {
       const node = e.target as HTMLInputElement | HTMLTextAreaElement;
       const { selectionStart, selectionEnd, value } = node;
+      
       switch (e.inputType) {
         case "insertText": {
           const str = transform(
@@ -128,6 +129,11 @@ export default function TaInput({
         }
         case "deleteContentBackward":
         case "deleteContentForward":
+        case "deleteWordForward":
+        case "deleteWordBackward":
+        case "insertFromPaste":
+        case "historyUndo":
+        case "historyRedo":
           onChange?.(value);
           break;
         default:
