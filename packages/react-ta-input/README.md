@@ -24,6 +24,16 @@
 
 ✅&nbsp; Easy switch between `ta` & `System` inputs methods
 
+## Upcoming
+
+⏳ Drag virtual keyboard
+
+⏳ Virtual Keyboard size variants
+
+⏳ Option to pick various signs
+
+⏳ Keyboard shortcut to change input language
+
 ## Installation
 
 ```sh
