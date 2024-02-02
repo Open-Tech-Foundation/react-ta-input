@@ -29,7 +29,8 @@
     "dist"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "repository": "git@github.com:Open-Tech-Foundation/react-ta-input.git",
   "author": "Thanga Ganapathy",
