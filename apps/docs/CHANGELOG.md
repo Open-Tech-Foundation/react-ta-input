@@ -1,5 +1,12 @@
 # docs
 
+## 0.0.13
+
+### Patch Changes
+
+- Updated dependencies [8772a30]
+  - @opentf/react-ta-input@0.10.0
+
 ## 0.0.12
 
 ### Patch Changes

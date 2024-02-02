@@ -1,5 +1,11 @@
 # @opentf/react-ta-input
 
+## 0.10.0
+
+### Minor Changes
+
+- 8772a30: Added provenance support
+
 ## 0.9.1
 
 ### Patch Changes
